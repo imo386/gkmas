@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer base {
+  * {
+    @apply border-border;
+
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply bg-background text-foreground;
+
+    font-family: var(--font-noto_sans_jp);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+code {
+  font-family: var(--font-source_code_pro);
+}
