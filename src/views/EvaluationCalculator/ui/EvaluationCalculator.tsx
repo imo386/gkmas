@@ -84,6 +84,8 @@ const EvaluationForm: React.FC = () => {
         />
         <input
           type="number"
+          min={0}
+          max={1500}
           value={dance}
           className="input input-bordered w-full max-w-xs"
           onChange={(e: { target: { value: string } }) =>
