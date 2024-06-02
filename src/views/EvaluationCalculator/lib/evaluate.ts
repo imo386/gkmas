@@ -69,7 +69,9 @@ export const calculateRankWithScore = (
   const positionPoints = POSITION_POINTS[position];
   const statusSum =
     position === 1
-      ? vocal + 30 + (dance + 30) + (visual + 30)
+      ? Math.min(vocal + 30, 1500) +
+        Math.min(dance + 30, 1500) +
+        Math.min(visual + 30, 1500)
       : vocal + dance + visual;
 
   const statusPoints = Math.floor(statusSum * STATUS_MULTIPLIER);
